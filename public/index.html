@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Jade's Midnight Adventure</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow: hidden;
+            background: #000;
+            font-family: Arial, sans-serif;
+            touch-action: none;
+        }
+
+        canvas {
+            display: block;
+            width: 100vw;
+            height: 100vh;
+            image-rendering: pixelated;
+        }
+
+        #mobileControls {
+            position: fixed;
+            bottom: 20px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            pointer-events: none;
+        }
+
+        .controlGroup {
+            display: flex;
+            gap: 10px;
+            pointer-events: auto;
+        }
+
+        .btn {
+            width: 70px;
+            height: 70px;
+            border: none;
+            border-radius: 50%;
+            font-size: 26px;
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            backdrop-filter: blur(5px);
+        }
+
+        @media (min-width: 900px) {
+            #mobileControls {
+                opacity: 0.4;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <canvas id="game"></canvas>
+
+    <div id="mobileControls">
+
+        <div class="controlGroup">
+            <button class="btn" id="leftBtn">◀</button>
+            <button class="btn" id="rightBtn">▶</button>
+        </div>
+
+        <div class="controlGroup">
+            <button class="btn" id="jumpBtn">▲</button>
+        </div>
+
+    </div>
+
+    <script src="game.js"></script>
+
+</body>
+
+</html>
