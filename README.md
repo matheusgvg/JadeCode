@@ -115,9 +115,9 @@ Utilize os botões exibidos na tela.
 
 ---
 
-## 📸 Capturas de Tela
+## 📸 Captura de Tela
 
-
+![Inicio Do Site](public/assets/captura.png)
 
 ---
 
