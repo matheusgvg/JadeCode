@@ -13,7 +13,7 @@ const GAME = {
     scene: "menu",
     started: false,
     score: 0,
-    lives: 3,
+    lives: 100,
     vinylsCollected: 0,
     currentLevel: 1,
     cameraX: 0
